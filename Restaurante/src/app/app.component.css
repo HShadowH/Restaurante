@@ -1,0 +1,29 @@
+/* Estilos para el contenedor principal */
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura completa de la ventana del navegador */
+  background-color: #e8e8e8; /* Color de fondo suave */
+}
+
+/* Estilos para el encabezado del contador */
+h1 {
+  color: #A498CA; /* Color de texto proporcionado */
+  font-size: 2.5em; /* Tamaño de la fuente más grande */
+  text-align: center; /* Alineación del texto al centro */
+  margin: 0; /* Elimina cualquier margen predeterminado */
+  padding: 30px 40px; /* Espacio alrededor del texto */
+  border-radius: 15px; /* Bordes redondeados más pronunciados */
+  background-color: #f9f9f9; /* Fondo blanco más sutil */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más profunda para el texto */
+  border: 1px solid #ccc; /* Borde sutil */
+  transition: all 0.3s ease; /* Transición suave para cambios de estilo */
+}
+
+/* Estilo adicional para el mensaje cuando el contador finaliza */
+.contador-finalizado {
+  color: red; /* Color rojo para destacar que el tiempo finalizó */
+  font-weight: bold; /* Texto en negrita */
+  transform: scale(1.05); /* Ligeramente más grande cuando finaliza */
+}
