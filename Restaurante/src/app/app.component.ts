@@ -12,8 +12,7 @@ export class AppComponent {
 
   constructor() {
     // Inicializar la fecha final y el tiempo restante
-    this.tiempoFinal = new Date();
-    this.tiempoFinal.setDate(this.tiempoFinal.getDate() + 15);
+    this.tiempoFinal = new Date('2023-12-12T00:00:00'); // Establecer la fecha final como 12 de diciembre de 2023
     this.tiempoRestante = 'Calculando...';
   }
 
@@ -40,6 +39,5 @@ export class AppComponent {
       this.tiempoRestante = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
     }, 1000);
   }
-
 
 }
